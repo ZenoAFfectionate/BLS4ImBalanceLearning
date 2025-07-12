@@ -16,7 +16,7 @@ import torch.nn.functional as F
 from torch.optim.lr_scheduler import CosineAnnealingWarmRestarts
 
 from torch.utils.data import DataLoader
-from datasets.dataset import data_loader
+from dataloader.dataset import data_loader
 from torch.utils.data import TensorDataset
 from utils.features_utils import extract_features
 

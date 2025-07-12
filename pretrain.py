@@ -4,8 +4,8 @@ import wandb
 import warnings
 import argparse
 from tqdm import tqdm
-from datasets.dataset import balance_dataloader
-from datasets.dataset import imbalance_dataloader
+from dataloader.dataset import balance_dataloader
+from dataloader.dataset import imbalance_dataloader
 
 import torch
 import torch.nn as nn

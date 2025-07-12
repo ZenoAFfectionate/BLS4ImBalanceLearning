@@ -3,7 +3,7 @@
 /config
 /checkpoints
 
-/datasets/features/
+/loader/features/
 
 /__pycache__
 */__pycache__
