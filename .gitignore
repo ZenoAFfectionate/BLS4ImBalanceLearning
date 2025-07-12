@@ -1,0 +1,9 @@
+/log
+/wandb
+/config
+/checkpoints
+
+/datasets/features/
+
+/__pycache__
+*/__pycache__
