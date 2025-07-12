@@ -1,18 +1,12 @@
 import os
-import sys
-import time
 import wandb
-import random
 import argparse
 import warnings
-import numpy as np
 from tqdm import tqdm
 
 import torch
-import torchvision
 import torch.nn as nn
 import torch.optim as optim
-import torch.nn.functional as F
 from torch.optim.lr_scheduler import CosineAnnealingWarmRestarts
 
 from torch.utils.data import DataLoader
@@ -20,9 +14,9 @@ from dataloader.dataset import data_loader
 from torch.utils.data import TensorDataset
 from utils.features_utils import extract_features
 
-from models.resnet import FFN
-from Experiment.KBLS.models.kbls import KBLS
-from Experiment.KBLS.models.bls import BLS
+from extractor.resnet import FFN
+from classifier.models.kbls import KBLS
+from classifier.models.bls import BLS
 
 
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')

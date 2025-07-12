@@ -3,7 +3,5 @@
 /config
 /checkpoints
 
-/loader/features/
-
 /__pycache__
 */__pycache__

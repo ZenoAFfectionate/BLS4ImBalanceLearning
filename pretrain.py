@@ -15,9 +15,9 @@ import torch.nn.functional as F
 
 from loss  import *
 from utils import *
-from models.resnet import resnet50, resnet50_fe
-from models.resnet import resnet101, resnet101_fe
-from models.resnet import resnet152, resnet152_fe
+from extractor.resnet import resnet50, resnet50_fe
+from extractor.resnet import resnet101, resnet101_fe
+from extractor.resnet import resnet152, resnet152_fe
 
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 
